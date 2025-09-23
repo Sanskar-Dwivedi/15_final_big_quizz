@@ -18,19 +18,22 @@ d) Create a constructor that allows you to initialize all of the member variable
 
 The following program should compile:
 
-```int main()
+```
+int main()
 {
 	Monster skeleton{ Monster::skeleton, "Bones", "*rattle*", 4 };
 
 	return 0;
-}```
+}
+```
 
 
 e) Now we want to be able to print our monster so we can validate it’s correct. Write two functions: One called getTypeString() that returns the monster’s type as a string, and one called print() that matches the output in the sample program below.
 
 The following program should compile:
 
-```int main()
+```
+int main()
 {
 	Monster skeleton{ Monster::skeleton, "Bones", "*rattle*", 4 };
 	skeleton.print();
@@ -39,7 +42,8 @@ The following program should compile:
 	vampire.print();
 
 	return 0;
-}```
+}
+```
 and print:
 
 Bones the skeleton has 4 hit points and says *rattle*.
@@ -52,13 +56,15 @@ Create a MonsterGenerator namespace. Create function within named generate(). Th
 
 The following program should compile:
 
-```int main()
+```
+int main()
 {
 	Monster m{ MonsterGenerator::generate() };
 	m.print();
 
 	return 0;
-}```
+}
+```
 and print:
 
 Bones the skeleton has 4 hit points and says *rattle*
@@ -68,13 +74,15 @@ g) Add two more functions to the MonsterGenerator namespace. getName(int) will t
 
 The following program should compile:
 
-```int main()
+```
+int main()
 {
 	Monster m{ MonsterGenerator::generate() };
 	m.print();
 
 	return 0;
-}```
+}
+```
 and print:
 
 Blarg the skeleton has 4 hit points and says *ROAR*
@@ -86,7 +94,8 @@ h) Now we’ll randomize our generated monster. Grab the “Random.h” code fro
 
 The following program should compile:
 
-```#include "Random.h"
+```
+#include "Random.h"
 
 int main()
 {
@@ -94,7 +103,8 @@ int main()
 	m.print();
 
 	return 0;
-}```
+}
+```
 and print something like this:
 
 Mort the zombie has 61 hit points and says *growl*
